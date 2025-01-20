@@ -361,3 +361,109 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* Стилове за cart.html */
+.cart-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.cart-grid {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.cart-item-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.cart-item-price {
+    font-size: 1rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.cart-item-quantity input {
+    width: 50px;
+    padding: 0.3rem;
+    text-align: center;
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+}
+
+.remove-item-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-item-btn:hover {
+    background-color: var(--secondary);
+}
+
+.cart-summary {
+    flex: 1;
+    padding: 1.5rem;
+    background: var(--light);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cart-summary h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--text);
+}
+
+.cart-summary p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.checkout-btn {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: var(--primary);
+}

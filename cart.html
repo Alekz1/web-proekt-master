@@ -2,30 +2,55 @@
 <html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <title>Фитнес Добавки - Количка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Количка</title>
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Начало</a>
-        <a href="products.html">Продукти</a>
-        <a href="contacts.html">Контакти</a>
-        <a href="cart.html" class="cart-link">🛒 Количка</a>
-    </nav>
-
+    <div class="nav-container">
+        <nav>
+            <a href="index.html">Начало</a>
+            <a href="products.html">Продукти</a>
+            <a href="contacts.html">Контакти</a>
+            <a href="cart.html" class="cart-link">🛒 Количка</a>
+        </nav>
+    </div>
+    <div class="page-container">
     <main>
-        <h2>Вашата количка</h2>
-        <div id="cart-items">
-            <p>Вашата количка е празна</p>
-            <a href="products.html" class="add-to-cart-button" style="display: inline-block; margin-top: 1rem; text-decoration: none;">
-                Към продуктите
-            </a>
-        </div>
+        <h1 class="page-title">Вашата количка</h1>
+
+        <section class="cart-section">
+            <div class="cart-grid">
+                <!-- Пример за продукт -->
+                <div class="cart-item">
+                    <img src="assets/products/whey-protein.png" alt="Продукт" class="cart-item-image">
+                    <div class="cart-item-details">
+                        <h3 class="cart-item-title">Premium Whey Протеин</h3>
+                        <p class="cart-item-price">Цена: 89.99 лв</p>
+                        <div class="cart-item-quantity">
+                            Количество: 
+                            <input type="number" value="1" min="1">
+                        </div>
+                    </div>
+                    <button class="remove-item-btn">Премахни</button>
+                </div>
+                <!-- Добавете повече продукти тук -->
+            </div>
+
+            <div class="cart-summary">
+                <h2>Обобщение</h2>
+                <p>Общо продукти: <span id="total-items">1</span></p>
+                <p>Обща сума: <span id="total-price">89.99 лв</span></p>
+                <button class="checkout-btn">Финализирай поръчката</button>
+            </div>
+        </section>
     </main>
+
 
     <footer>
         <p>Email: customersupport@gubuldobavki.bg | Телефон: +359 888 123 456</p>
         <p>© 2025 "Gubul Dobavki" ООД. Всички права запазени.</p>
     </footer>
+    </div>
 </body>
 </html>
