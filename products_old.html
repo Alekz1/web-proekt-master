@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фитнес Добавки - Продукти</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <<div class="nav-container">
+        <nav>
+            <a href="index.html" class="logo">Гъбъл Добавки</a>
+            <div class="nav-links">
+                <a href="index.html">Начало</a>
+                <div class="nav-item">
+                    <a href="products.html">Продукти</a>
+                    <div class="dropdown-menu">
+                        <a href="products.html#proteins">Протеини</a>
+                        <a href="products.html#amino">Аминокиселини</a>
+                        <a href="products.html#vitamins">Витамини</a>
+                    </div>
+                </div>
+                <a href="contacts.html">Контакти</a>
+                <a href="cart.html" class="cart-link">🛒 Количка</a>
+            </div>
+        </nav>
+    </div>
+
+    <h1 class="page-title">Нашите Продукти</h1>
+
+    <div class="products-grid">
+        <!-- Продукт 1 -->
+        <div class="product-card">
+            <img src="assets/products/whey-protein.png" alt="Whey Протеин" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Premium Whey Протеин</h3>
+                <p class="product-description">Висококачествен суроватъчен протеин с добавени BCAA и глутамин.</p>
+                <p class="product-price">89.99 лв</p>
+                <form action="cart.html" method="get">
+                    <input type="hidden" name="product" value="whey-protein">
+                    <input type="hidden" name="name" value="Premium Whey Протеин">
+                    <input type="hidden" name="price" value="89.99">
+                    <input type="number" name="quantity" value="1" min="1" max="10" class="quantity-input">
+                    <button type="submit" class="add-to-cart-btn">Добави в количката</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Продукт 2 -->
+        <div class="product-card">
+            <img src="assets/products/BCAA.jpg" alt="BCAA" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">BCAA 2:1:1</h3>
+                <p class="product-description">Аминокиселини за бързо възстановяване и мускулен растеж.</p>
+                <p class="product-price">45.99 лв</p>
+                <form action="cart.html" method="get">
+                    <input type="hidden" name="product" value="bcaa">
+                    <input type="hidden" name="name" value="BCAA 2:1:1">
+                    <input type="hidden" name="price" value="45.99">
+                    <input type="number" name="quantity" value="1" min="1" max="10" class="quantity-input">
+                    <button type="submit" class="add-to-cart-btn">Добави в количката</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Продукт 3 -->
+        <div class="product-card">
+            <img src="assets/products/creatine.png" alt="Креатин" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Креатин Монохидрат</h3>
+                <p class="product-description">Чист креатин монохидрат за максимална сила и издръжливост.</p>
+                <p class="product-price">39.99 лв</p>
+                <form action="cart.html" method="get">
+                    <input type="hidden" name="product" value="creatine">
+                    <input type="hidden" name="name" value="Креатин Монохидрат">
+                    <input type="hidden" name="price" value="39.99">
+                    <input type="number" name="quantity" value="1" min="1" max="10" class="quantity-input">
+                    <button type="submit" class="add-to-cart-btn">Добави в количката</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Продукт 4 -->
+        <div class="product-card">
+            <img src="assets/products/vitamins.jpg" alt="Витамини" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Мултивитамини Active</h3>
+                <p class="product-description">Комплекс от витамини и минерали за активни спортисти.</p>
+                <p class="product-price">29.99 лв</p>
+                <form action="cart.html" method="get">
+                    <input type="hidden" name="product" value="vitamins">
+                    <input type="hidden" name="name" value="Мултивитамини Active">
+                    <input type="hidden" name="price" value="29.99">
+                    <input type="number" name="quantity" value="1" min="1" max="10" class="quantity-input">
+                    <button type="submit" class="add-to-cart-btn">Добави в количката</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Продукт 5 -->
+        <div class="product-card">
+            <img src="assets/products/preworkout.jpg" alt="preworkout" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Pre-Workout Extreme</h3>
+                <p class="product-description">Мощна предтренировъчна формула за максимална енергия.</p>
+                <p class="product-price">59.99 лв</p>
+                <form action="cart.html" method="get">
+                    <input type="hidden" name="product" value="preworkout">
+                    <input type="hidden" name="name" value="Pre-Workout Extreme">
+                    <input type="hidden" name="price" value="59.99">
+                    <input type="number" name="quantity" value="1" min="1" max="10" class="quantity-input">
+                    <button type="submit" class="add-to-cart-btn">Добави в количката</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Продукт 6 -->
+        <div class="product-card">
+            <img src="assets/products/protein-bar.jpg" alt="Протеинов бар" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Протеинов Бар</h3>
+                <p class="product-description">Вкусен протеинов бар с 20г протеин и ниско съдържание на захар.</p>
+                <p class="product-price">4.99 лв</p>
+                <form action="cart.html" method="get">
+                    <input type="hidden" name="product" value="protein-bar">
+                    <input type="hidden" name="name" value="Протеинов Бар">
+                    <input type="hidden" name="price" value="4.99">
+                    <input type="number" name="quantity" value="1" min="1" max="10" class="quantity-input">
+                    <button type="submit" class="add-to-cart-btn">Добави в количката</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Продукт 7 -->
+        <div class="product-card">
+            <img src="assets/products/omjega-3.jpg" alt="Омега 3" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Омега 3 Рибено Масло</h3>
+                <p class="product-description">Висококачествени омега-3 мастни киселини за здраве и възстановяване.</p>
+                <p class="product-price">34.99 лв</p>
+                <form action="cart.html" method="get">
+                    <input type="hidden" name="product" value="omega3">
+                    <input type="hidden" name="name" value="Омега 3 Рибено Масло">
+                    <input type="hidden" name="price" value="34.99">
+                    <input type="number" name="quantity" value="1" min="1" max="10" class="quantity-input">
+                    <button type="submit" class="add-to-cart-btn">Добави в количката</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Продукт 8 -->
+        <div class="product-card">
+            <img src="assets/products/magnezium.jpg" alt="Магнезий" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Магнезий ZMA</h3>
+                <p class="product-description">Комбинация от цинк, магнезий и витамин B6 за по-добър сън.</p>
+                <p class="product-price">25.99 лв</p>
+                <form action="cart.html" method="get">
+                    <input type="hidden" name="product" value="magnesium">
+                    <input type="hidden" name="name" value="Магнезий ZMA">
+                    <input type="hidden" name="price" value="25.99">
+                    <input type="number" name="quantity" value="1" min="1" max="10" class="quantity-input">
+                    <button type="submit" class="add-to-cart-btn">Добави в количката</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 "Gubul Dobavki" ООД. Всички права запазени.</p>
+        <p>Email: customersupport@gubuldobavki.bg | Телефон: +359 888 123 456</p>
+    </footer>
+</body>
+</html>
