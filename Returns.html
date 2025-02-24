@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>Фитнес Добавки - Връщане на продукт</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <a href="index.html" class="logo">Гъбъл Добавки</a>
+            <div class="nav-links">
+                <a href="index.html">Начало</a>
+                <div class="nav-item">
+                    <a href="products.html">Продукти</a>
+                    <div class="dropdown-menu">
+                        <a href="products.html#proteins">Протеини</a>
+                        <a href="products.html#amino">Аминокиселини</a>
+                        <a href="products.html#pre-workout">Предтренировъчни</a>
+                        <a href="products.html#post-workout">Възстановяване</a>
+                        <a href="products.html#vitamins">Витамини и Минерали</a>
+                        <a href="products.html#healthy-fats">Здравословни Мазнини</a>
+                        <a href="products.html#snacks">Закуски и Барове</a>
+                    </div>
+                </div>
+                <a href="contacts.html">Контакти</a>
+                <a href="cart.html" class="cart-link">🛒 Количка</a>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="page-container">
+        <main>
+            <div class="checkout-container">
+                <h1>Заявка за връщане на продукт</h1>
+                <form class="checkout-form" action="/submit-return" method="POST">
+                    <div class="form-group">
+                        <label for="name">Име и фамилия</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Имейл адрес</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="order-number">Номер на поръчка</label>
+                        <input type="text" id="order-number" name="order-number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-name">Име на продукта</label>
+                        <input type="text" id="product-name" name="product-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="return-reason">Причина за връщане</label>
+                        <select id="return-reason" name="return-reason" required>
+                            <option value="">Изберете причина</option>
+                            <option value="wrong-product">Грешен продукт</option>
+                            <option value="damaged">Повреден продукт</option>
+                            <option value="not-as-described">Не отговаря на описанието</option>
+                            <option value="other">Друга причина</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additional-info">Допълнителна информация</label>
+                        <textarea id="additional-info" name="additional-info" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-order-btn">Изпрати заявка</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>Email: customersupport@gubuldobavki.bg | Телефон: +359 888 123 456</p>
+            <p>© 2025 "Gubul Dobavki" ООД. Всички права запазени.</p>
+        </footer>
+    </div>
+</body>
+</html>
