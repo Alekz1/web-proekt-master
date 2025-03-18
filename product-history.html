@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История на Поръчките - Гъбъл Добавки</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="nav-container">
+            <nav>
+                <a href="index.html" class="logo">Гъбъл Добавки</a>
+                <div class="nav-links">
+                    <a href="index.html">Начало</a>
+                    <div class="nav-item">
+                        <a href="products.html">Продукти</a>
+                        <div class="dropdown-menu">
+                            <a href="products.html#proteins">Протеини</a>
+                            <a href="products.html#amino">Аминокиселини</a>
+                            <a href="products.html#pre-workout">Предтренировъчни</a>
+                            <a href="products.html#post-workout">Възстановяване</a>
+                            <a href="products.html#vitamins">Витамини и Минерали</a>
+                            <a href="products.html#healthy-fats">Здравословни Мазнини</a>
+                            <a href="products.html#snacks">Закуски и Барове</a>
+                        </div>
+                    </div>
+                    <div class="nav-item profile-nav-item">
+                        <a href="profile.html">👤 Профил</a>
+                        <div class="dropdown-menu profile-dropdown">
+                            <a href="profile.html">Моят Профил</a>
+                            <a href="Returns.html">Връщане на поръчките</a>
+                            <a href="product-history.html">История на поръчките</a>
+                            <a href="settings.html">Настройки</a>
+                            <a href="logout.html">Изход</a>
+                        </div>
+                    </div>
+                    <a href="cart.html" class="cart-link">🛒 Количка</a>
+                </div>
+            </nav>
+        </div>
+
+        <main>
+            <h1 class="page-title">История на Поръчките</h1>
+
+            <div class="order-history-container" style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
+                <!-- Order 1 -->
+                <div class="order-card" style="background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); margin-bottom: 2rem; overflow: hidden;">
+                    <div class="order-header" style="background: var(--light); padding: 1.5rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h3 style="margin: 0; color: var(--text);">Поръчка #10243</h3>
+                            <p style="margin: 0.5rem 0 0; color: #777;">Дата: 15.03.2025</p>
+                        </div>
+                        <div>
+                            <span class="order-status" style="background: #4CAF50; color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem;">Доставена</span>
+                        </div>
+                    </div>
+                    <div class="order-products" style="padding: 1.5rem;">
+                        <div class="ordered-product" style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee;">
+                            <img src="assets/protein-1.jpg" alt="Протеин" style="width: 100px; height: 100px; object-fit: cover; border-radius: 10px;">
+                            <div class="product-details" style="flex-grow: 1;">
+                                <h4 style="margin: 0 0 0.5rem; color: var(--text);">Whey Protein Isolate - Шоколад</h4>
+                                <p style="margin: 0 0 0.5rem; color: #777;">Количество: 2 бр.</p>
+                                <p style="margin: 0; color: var(--accent); font-weight: 600;">89.90 лв.</p>
+                            </div>
+                            <div class="product-actions" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <a href="products.html#proteins" class="action-btn" style="background: var(--accent); color: white; padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; text-align: center;">Купи отново</a>
+                                <a href="#" class="action-btn" style="background: var(--light); color: var(--text); padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; text-align: center;">Остави отзив</a>
+                            </div>
+                        </div>
+                        <div class="ordered-product" style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee;">
+                            <img src="assets/amino-1.jpg" alt="Аминокиселини" style="width: 100px; height: 100px; object-fit: cover; border-radius: 10px;">
+                            <div class="product-details" style="flex-grow: 1;">
+                                <h4 style="margin: 0 0 0.5rem; color: var(--text);">BCAA 5000 - Портокал</h4>
+                                <p style="margin: 0 0 0.5rem; color: #777;">Количество: 1 бр.</p>
+                                <p style="margin: 0; color: var(--accent); font-weight: 600;">49.90 лв.</p>
+                            </div>
+                            <div class="product-actions" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <a href="products.html#amino" class="action-btn" style="background: var(--accent); color: white; padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; text-align: center;">Купи отново</a>
+                                <a href="#" class="action-btn" style="background: var(--light); color: var(--text); padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; text-align: center;">Остави отзив</a>
+                            </div>
+                        </div>
+                        <div class="order-summary" style="display: flex; justify-content: space-between; padding-top: 1rem; border-top: 1px solid #eee;">
+                            <div>
+                                <p style="margin: 0; color: #777;">Общо: <span style="font-weight: 600; color: var(--text);">229.70 лв.</span></p>
+                                <p style="margin: 0.5rem 0 0; color: #777;">Метод на плащане: <span style="color: var(--text);">Кредитна карта</span></p>
+                            </div>
+                            <a href="#" class="order-details-btn" style="background: var(--secondary); color: white; padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; align-self: flex-start;">Детайли на поръчката</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order 2 -->
+                <div class="order-card" style="background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); margin-bottom: 2rem; overflow: hidden;">
+                    <div class="order-header" style="background: var(--light); padding: 1.5rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h3 style="margin: 0; color: var(--text);">Поръчка #10157</h3>
+                            <p style="margin: 0.5rem 0 0; color: #777;">Дата: 02.02.2025</p>
+                        </div>
+                        <div>
+                            <span class="order-status" style="background: #4CAF50; color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem;">Доставена</span>
+                        </div>
+                    </div>
+                    <div class="order-products" style="padding: 1.5rem;">
+                        <div class="ordered-product" style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee;">
+                            <img src="assets/pre-workout-1.jpg" alt="Предтренировъчен" style="width: 100px; height: 100px; object-fit: cover; border-radius: 10px;">
+                            <div class="product-details" style="flex-grow: 1;">
+                                <h4 style="margin: 0 0 0.5rem; color: var(--text);">Pre-Workout Extreme - Горски плодове</h4>
+                                <p style="margin: 0 0 0.5rem; color: #777;">Количество: 1 бр.</p>
+                                <p style="margin: 0; color: var(--accent); font-weight: 600;">64.90 лв.</p>
+                            </div>
+                            <div class="product-actions" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <a href="products.html#pre-workout" class="action-btn" style="background: var(--accent); color: white; padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; text-align: center;">Купи отново</a>
+                                <a href="#" class="action-btn" style="background: var(--light); color: var(--text); padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; text-align: center;">Остави отзив</a>
+                            </div>
+                        </div>
+                        <div class="ordered-product" style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee;">
+                            <img src="assets/vitamin-1.jpg" alt="Витамини" style="width: 100px; height: 100px; object-fit: cover; border-radius: 10px;">
+                            <div class="product-details" style="flex-grow: 1;">
+                                <h4 style="margin: 0 0 0.5rem; color: var(--text);">Мултивитамини за активни хора</h4>
+                                <p style="margin: 0 0 0.5rem; color: #777;">Количество: 2 бр.</p>
+                                <p style="margin: 0; color: var(--accent); font-weight: 600;">29.90 лв.</p>
+                            </div>
+                            <div class="product-actions" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <a href="products.html#vitamins" class="action-btn" style="background: var(--accent); color: white; padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; text-align: center;">Купи отново</a>
+                                <a href="#" class="action-btn" style="background: var(--light); color: var(--text); padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; text-align: center;">Остави отзив</a>
+                            </div>
+                        </div>
+                        <div class="ordered-product" style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee;">
+                            <img src="assets/snack-1.jpg" alt="Протеинов бар" style="width: 100px; height: 100px; object-fit: cover; border-radius: 10px;">
+                            <div class="product-details" style="flex-grow: 1;">
+                                <h4 style="margin: 0 0 0.5rem; color: var(--text);">Протеинов бар - Шоколад и фъстъчено масло</h4>
+                                <p style="margin: 0 0 0.5rem; color: #777;">Количество: 10 бр.</p>
+                                <p style="margin: 0; color: var(--accent); font-weight: 600;">32.90 лв.</p>
+                            </div>
+                            <div class="product-actions" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <a href="products.html#snacks" class="action-btn" style="background: var(--accent); color: white; padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; text-align: center;">Купи отново</a>
+                                <a href="#" class="action-btn" style="background: var(--light); color: var(--text); padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; text-align: center;">Остави отзив</a>
+                            </div>
+                        </div>
+                        <div class="order-summary" style="display: flex; justify-content: space-between; padding-top: 1rem; border-top: 1px solid #eee;">
+                            <div>
+                                <p style="margin: 0; color: #777;">Общо: <span style="font-weight: 600; color: var(--text);">157.60 лв.</span></p>
+                                <p style="margin: 0.5rem 0 0; color: #777;">Метод на плащане: <span style="color: var(--text);">Наложен платеж</span></p>
+                            </div>
+                            <a href="#" class="order-details-btn" style="background: var(--secondary); color: white; padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; align-self: flex-start;">Детайли на поръчката</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order 3 (in progress) -->
+                <div class="order-card" style="background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); margin-bottom: 2rem; overflow: hidden;">
+                    <div class="order-header" style="background: var(--light); padding: 1.5rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee;">
+                        <div>
+                            <h3 style="margin: 0; color: var(--text);">Поръчка #10289</h3>
+                            <p style="margin: 0.5rem 0 0; color: #777;">Дата: 17.03.2025</p>
+                        </div>
+                        <div>
+                            <span class="order-status" style="background: #2196F3; color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem;">В процес на обработка</span>
+                        </div>
+                    </div>
+                    <div class="order-products" style="padding: 1.5rem;">
+                        <div class="ordered-product" style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee;">
+                            <img src="assets/protein-2.jpg" alt="Протеин" style="width: 100px; height: 100px; object-fit: cover; border-radius: 10px;">
+                            <div class="product-details" style="flex-grow: 1;">
+                                <h4 style="margin: 0 0 0.5rem; color: var(--text);">Казеинов протеин - Ванилия</h4>
+                                <p style="margin: 0 0 0.5rem; color: #777;">Количество: 1 бр.</p>
+                                <p style="margin: 0; color: var(--accent); font-weight: 600;">79.90 лв.</p>
+                            </div>
+                            <div class="product-actions" style="display: flex; flex-direction: column; gap: 0.5rem; opacity: 0.5;">
+                                <a href="products.html#proteins" class="action-btn" style="background: var(--accent); color: white; padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; text-align: center; pointer-events: none;">Купи отново</a>
+                                <a href="#" class="action-btn" style="background: var(--light); color: var(--text); padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; text-align: center; pointer-events: none;">Остави отзив</a>
+                            </div>
+                        </div>
+                        <div class="order-summary" style="display: flex; justify-content: space-between; padding-top: 1rem; border-top: 1px solid #eee;">
+                            <div>
+                                <p style="margin: 0; color: #777;">Общо: <span style="font-weight: 600; color: var(--text);">79.90 лв.</span></p>
+                                <p style="margin: 0.5rem 0 0; color: #777;">Метод на плащане: <span style="color: var(--text);">Кредитна карта</span></p>
+                            </div>
+                            <a href="#" class="order-details-btn" style="background: var(--secondary); color: white; padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; align-self: flex-start;">Детайли на поръчката</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination" style="display: flex; justify-content: center; margin-top: 2rem;">
+                    <a href="#" class="pagination-btn" style="background: var(--light); color: var(--text); padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; margin: 0 0.5rem;">Предишна</a>
+                    <a href="#" class="pagination-btn" style="background: var(--accent); color: white; padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; margin: 0 0.5rem;">1</a>
+                    <a href="#" class="pagination-btn" style="background: var(--light); color: var(--text); padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; margin: 0 0.5rem;">2</a>
+                    <a href="#" class="pagination-btn" style="background: var(--light); color: var(--text); padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; margin: 0 0.5rem;">3</a>
+                    <a href="#" class="pagination-btn" style="background: var(--light); color: var(--text); padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; margin: 0 0.5rem;">Следваща</a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Email: customersupport@gubuldobavki.bg | Телефон: +359 888 123 456</p>
+            <p>© 2025 "Gubul Dobavki" ООД. Всички права запазени.</p>
+        </footer>
+    </div>
+</body>
+</html>

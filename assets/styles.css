@@ -1043,3 +1043,695 @@ textarea {
     right: 0;
     left: auto;
 }
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Стилове за страницата с история на продуктите */
+.product-history-container {
+    max-width: 1200px;
+    margin: 6rem auto 2rem;
+    padding: 0 2rem;
+}
+
+.history-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.history-filter {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    color: var(--text);
+    min-width: 200px;
+}
+
+.history-category-section {
+    margin-bottom: 3rem;
+}
+
+.history-category {
+    font-size: 1.5rem;
+    color: var(--accent);
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.history-item {
+    display: flex;
+    gap: 1.5rem;
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.history-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    padding: 1rem;
+    background: var(--accent);
+    border-radius: 10px;
+    color: white;
+}
+
+.history-day {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.history-month {
+    font-size: 1rem;
+}
+
+.history-info {
+    display: flex;
+    flex: 1;
+    gap: 1.5rem;
+}
+
+.history-product-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.history-product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.history-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.history-product-name {
+    font-size: 1.2rem;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+}
+
+.history-view-time {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.history-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.history-action-btn {
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.history-action-btn:first-child {
+    background: var(--light);
+    color: var(--text);
+    border: 1px solid #ddd;
+}
+
+.history-action-btn.add-to-cart {
+    background: var(--accent);
+    color: white;
+}
+
+.history-action-btn:hover {
+    transform: translateY(-2px);
+}
+
+.history-action-btn.add-to-cart:hover {
+    background: var(--primary);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 3rem;
+}
+
+.pagination-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: var(--text);
+    background: white;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.pagination-item.next {
+    width: auto;
+    padding: 0 1rem;
+    border-radius: 20px;
+}
+
+.pagination-item.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.pagination-item:hover:not(.active) {
+    background: var(--light);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .history-info {
+        flex-direction: column;
+    }
+    
+    .history-product-image {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .history-actions {
+        flex-direction: column;
+    }
+    
+    .filter-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 580px) {
+    .history-item {
+        flex-direction: column;
+    }
+    
+    .history-date {
+        flex-direction: row;
+        gap: 0.5rem;
+        width: 100%;
+    }
+}
+/* Profile Page Specific Styles */
+
+.profile-section {
+    max-width: 1200px;
+    margin: 8rem auto 2rem;
+    padding: 0 2rem;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profile-header h1 {
+    color: var(--text);
+    font-size: 2rem;
+}
+
+.edit-profile-btn {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+}
+
+.profile-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+}
+
+/* Profile Sidebar */
+.profile-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.profile-avatar {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 4px solid var(--primary);
+}
+
+.change-avatar-btn {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.change-avatar-btn:hover {
+    background: var(--accent);
+    color: white;
+}
+
+.profile-nav {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-nav a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: var(--text);
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.profile-nav a:last-child {
+    border-bottom: none;
+}
+
+.profile-nav a.active {
+    background: var(--primary);
+    color: white;
+    font-weight: 500;
+}
+
+.profile-nav a:hover:not(.active) {
+    background: rgba(213, 117, 0, 0.1);
+    color: var(--primary);
+}
+
+/* Profile Details */
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card h2 {
+    color: var(--text);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.5rem;
+    width: fit-content;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info-row {
+    display: flex;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 1rem;
+}
+
+.info-label {
+    width: 180px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.info-value {
+    flex-grow: 1;
+    color: #666;
+}
+
+.address-info {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.manage-addresses-btn {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.manage-addresses-btn:hover {
+    background: var(--primary);
+}
+
+.preferences {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.preference-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.preference-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary);
+}
+
+.save-preferences-btn {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.save-preferences-btn:hover {
+    background: var(--primary);
+}
+
+/* Loyalty Section */
+.loyalty-section {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    padding: 0 2rem;
+}
+
+.loyalty-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.loyalty-card h2 {
+    color: var(--text);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.loyalty-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.loyalty-points {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 10px;
+    color: white;
+    min-width: 150px;
+}
+
+.points-number {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.points-label {
+    font-size: 1.2rem;
+}
+
+.loyalty-level {
+    flex-grow: 1;
+}
+
+.level-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+
+.progress-bar {
+    height: 20px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: 10px;
+}
+
+.level-info {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.redeem-points-btn {
+    display: block;
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+.redeem-points-btn:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .profile-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-sidebar {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .profile-avatar {
+        width: 200px;
+    }
+    
+    .profile-nav {
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .profile-sidebar {
+        flex-direction: column;
+    }
+    
+    .profile-avatar {
+        width: 100%;
+    }
+    
+    .loyalty-info {
+        flex-direction: column;
+    }
+    
+    .loyalty-points {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .info-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .info-label {
+        width: 100%;
+    }
+}
+/* Contact Form Styles */
+.contact-form-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+    color: var(--text);
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.contact-form-container h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: var(--text);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(213, 117, 0, 0.2);
+}
+
+.submit-btn {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Make the form responsive */
+@media (min-width: 768px) {
+    .contact-form {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+    
+    .form-group:nth-child(5) {
+        grid-column: span 2;
+    }
+    
+    .submit-btn {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form-container {
+        padding: 1.5rem;
+    }
+}

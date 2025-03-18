@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профил - Гъбъл Добавки</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/profile-styles.css">
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <a href="index.html" class="logo">Гъбъл Добавки</a>
+            <div class="nav-links">
+                <a href="index.html">Начало</a>
+                <div class="nav-item">
+                    <a href="products.html">Продукти</a>
+                    <div class="dropdown-menu">
+                        <a href="products.html#proteins">Протеини</a>
+                        <a href="products.html#amino">Аминокиселини</a>
+                        <a href="products.html#pre-workout">Предтренировъчни</a>
+                        <a href="products.html#post-workout">Възстановяване</a>
+                        <a href="products.html#vitamins">Витамини и Минерали</a>
+                        <a href="products.html#healthy-fats">Здравословни Мазнини</a>
+                        <a href="products.html#snacks">Закуски и Барове</a>
+                    </div>
+                </div>
+                <a href="contacts.html">Контакти</a>
+                <div class="nav-item profile-nav-item">
+                    <a href="profile.html">👤 Профил</a>
+                    <div class="dropdown-menu profile-dropdown">
+                        <a href="profile.html">Моят Профил</a>
+                        <a href="order-history.html">История на Поръчките</a>
+                        <a href="settings.html">Настройки</a>
+                        <a href="logout.html">Изход</a>
+                    </div>
+                </div>
+                <a href="cart.html" class="cart-link">🛒 Количка</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="page-container">
+        <main>
+            <section class="profile-section">
+                <div class="profile-header">
+                    <h1>Моят Профил</h1>
+                    <button class="edit-profile-btn">Редактирай Профил</button>
+                </div>
+                
+                <div class="profile-content">
+                    <div class="profile-sidebar">
+                        <div class="profile-avatar">
+                            <img src="assets/avatar-placeholder.jpg" alt="Профилна Снимка">
+                            <button class="change-avatar-btn">Промени Снимка</button>
+                        </div>
+                        
+                        <div class="profile-nav">
+                            <a href="profile.html" class="active">Лични Данни</a>
+                            <a href="order-history.html">История на Поръчките</a>
+                            <a href="favorites.html">Любими Продукти</a>
+                            <a href="settings.html">Настройки</a>
+                            <a href="addresses.html">Адреси за Доставка</a>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-details">
+                        <div class="profile-card">
+                            <h2>Лични Данни</h2>
+                            <div class="profile-info">
+                                <div class="info-row">
+                                    <div class="info-label">Име:</div>
+                                    <div class="info-value">Иван Иванов</div>
+                                </div>
+                                <div class="info-row">
+                                    <div class="info-label">Имейл:</div>
+                                    <div class="info-value">ivan.ivanov@example.com</div>
+                                </div>
+                                <div class="info-row">
+                                    <div class="info-label">Телефон:</div>
+                                    <div class="info-value">+359 888 123 456</div>
+                                </div>
+                                <div class="info-row">
+                                    <div class="info-label">Дата на Раждане:</div>
+                                    <div class="info-value">15.05.1990</div>
+                                </div>
+                                <div class="info-row">
+                                    <div class="info-label">Пол:</div>
+                                    <div class="info-value">Мъж</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-card">
+                            <h2>Адрес за Доставка</h2>
+                            <div class="address-info">
+                                <p><strong>Основен Адрес:</strong></p>
+                                <p>ул. "Българска" 123</p>
+                                <p>ет. 5, ап. 15</p>
+                                <p>София, 1000</p>
+                                <p>България</p>
+                            </div>
+                            <button class="manage-addresses-btn">Управление на Адреси</button>
+                        </div>
+                        
+                        <div class="profile-card">
+                            <h2>Предпочитания</h2>
+                            <div class="preferences">
+                                <div class="preference-item">
+                                    <input type="checkbox" id="newsletter" checked>
+                                    <label for="newsletter">Абонамент за новини и промоции</label>
+                                </div>
+                                <div class="preference-item">
+                                    <input type="checkbox" id="sms-notifications" checked>
+                                    <label for="sms-notifications">SMS известия за поръчки</label>
+                                </div>
+                                <div class="preference-item">
+                                    <input type="checkbox" id="recommendations">
+                                    <label for="recommendations">Персонализирани препоръки</label>
+                                </div>
+                            </div>
+                            <button class="save-preferences-btn">Запази Промените</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="loyalty-section">
+                <div class="loyalty-card">
+                    <h2>Моите Точки за Лоялност</h2>
+                    <div class="loyalty-info">
+                        <div class="loyalty-points">
+                            <span class="points-number">350</span>
+                            <span class="points-label">Точки</span>
+                        </div>
+                        <div class="loyalty-level">
+                            <div class="level-title">Сребърно Ниво</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%"></div>
+                            </div>
+                            <div class="level-info">Още 150 точки до Златно Ниво</div>
+                        </div>
+                    </div>
+                    <button class="redeem-points-btn">Използвай Точки</button>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Email: customersupport@gubuldobavki.bg | Телефон: +359 888 123 456</p>
+            <p>© 2025 "Gubul Dobavki" ООД. Всички права запазени.</p>
+        </footer>
+    </div>
+</body>
+</html>

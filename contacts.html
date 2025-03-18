@@ -38,6 +38,44 @@
                     <p>Телефон: +359 888 123 456</p>
                 </div>
 
+                <!-- New Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Свържете се с нас</h2>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Име</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Имейл</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Тема</label>
+                            <select id="subject" name="subject">
+                                <option value="question">Въпрос за продукт</option>
+                                <option value="order">Информация за поръчка</option>
+                                <option value="complaint">Оплакване</option>
+                                <option value="other">Друго</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Съобщение</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Изпрати</button>
+                    </form>
+                </div>
+
                 <div class="returns-section">
                     <h2>Връщане на продукти</h2>
                     <p>Ако желаете да върнете закупен продукт, моля следвайте тези стъпки:</p>
